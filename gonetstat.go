@@ -285,26 +285,22 @@ func getCountConnectionsByPort(t string, p int64) int {
 
 func Tcp() []Process {
 	// Get a slice of Process type with TCP data
-	data := netstat("tcp")
-	return data
+	return netstat("tcp")
 }
 
 func Udp() []Process {
 	// Get a slice of Process type with UDP data
-	data := netstat("udp")
-	return data
+	return netstat("udp")
 }
 
 func Tcp6() []Process {
 	// Get a slice of Process type with TCP6 data
-	data := netstat("tcp6")
-	return data
+	return netstat("tcp6")
 }
 
 func Udp6() []Process {
 	// Get a slice of Process type with UDP6 data
-	data := netstat("udp6")
-	return data
+	return netstat("udp6")
 }
 
 func TcpByPort(port int64) []Process {
